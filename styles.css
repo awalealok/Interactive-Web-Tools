@@ -1,0 +1,157 @@
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: rgba(44, 62, 80, 0.8);
+      color: white;
+      font-size: 2rem;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+    }
+    nav button {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background-color: #2980b9;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    nav button:hover {
+      background-color: #1c5980;
+    }
+    .tool {
+      max-width: 400px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+      color: #2c3e50;
+      text-align: center;
+    }
+    .output {
+      margin-top: 10px;
+      padding: 10px;
+      background: #ecf0f1;
+      border-radius: 5px;
+    }
+    .palette div {
+      display: inline-block;
+      width: 100px;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .quote-box img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .quote-box p {
+      font-family: "Dancing Script", cursive;
+      font-style: Sans-serif;
+      font-size: 25px;
+      margin: 10px 0;
+      font-weight: bolder;
+      text-shadow: #333 1px 1px 3px;
+    }
+    .quote-box, .container, .palette, .periodic {
+  background-color: skyblue;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 15px;
+}
+
+
+      .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem 3rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 320px;
+      width: 90%;
+    }
+
+   #nameImage {
+  margin: 1rem auto 0 auto; /* top margin 1rem, auto left/right to center */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+
+    #nameImage:hover {
+      transform: scale(1.05);
+    }
+
+    #nameOutput {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+/* Dancing Script font style */
+    .dancing-script {
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.6rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: #ff6f91;
+      color: white;
+      box-shadow: 0 4px 15px rgba(255, 111, 145, 0.5);
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff4f70;
+    }
+     .element {
+      transition: transform 0.2s;
+    }
+    .element:hover {
+      transform: scale(1.1);
+      z-index: 10;
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      pointer-events: none;
+      white-space: nowrap;
+    }

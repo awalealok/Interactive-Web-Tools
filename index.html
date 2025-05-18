@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Tools</title>
+   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>Interactive Web Tools</header>
+  <nav>
+    <button onclick="showTool('quote')">Quote Generator</button>
+    <button onclick="showTool('name')">Name Generator</button>
+    <button onclick="showTool('palette')">Color Palette</button>
+    <button onclick="showTool('periodic')">Periodic Table</button>
+
+
+  </nav>
+  <section id="quote" class="tool">
+    <h2>Quote Generator</h2>
+    <div class="quote-box">
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80
+
+" alt="Quote" />
+      <p id="quoteText">Click the button to generate a quote!</p>
+      <button onclick="generateQuote()">Generate Quote</button>
+    </div>
+  </section>
+  <section id="name" class="tool" style="display: none;">
+    <div class="container">
+    <h2>Name Generator</h2>
+    <img id="nameImage" alt="Person Image" />
+    <div id="nameOutput">Click the button to generate a name</div>
+    <button onclick="generateName()">Generate Name</button>
+  </div>
+
+    
+  </section>
+  <section id="palette" class="tool" style="display: none;">
+    <h2>Color Palette</h2>
+    <button onclick="generatePalette()">Generate Palette</button>
+    <div class="palette" id="paletteOutput"></div>
+  </section>
+<section id="periodic" class="tool" style="display: none;">
+  <h2> Periodic Table</h2>
+   <button onclick="generatePeriodic()">Generate Periodic</button>
+
+  <div class="periodic" id="periodicOutput"></div>
+  <div class="flex gap-4 mb-6 justify-center">
+    <select id="stateFilter" class="text-black p-2 rounded">
+      <option value="all">All States</option>
+      <option value="solid">Solid</option>
+      <option value="liquid">Liquid</option>
+      <option value="gas">Gas</option>
+    </select>
+    <select id="typeFilter" class="text-black p-2 rounded">
+      <option value="all">All Types</option>
+      <option value="metal">Metal</option>
+      <option value="nonmetal">Nonmetal</option>
+      <option value="metalloid">Metalloid</option>
+    </select>
+  </div>
+
+  <div id="table" class="grid grid-cols-18 gap-1 relative"></div>
+
+  <div id="tooltip" class="tooltip"></div>
+</section>
+  <script src="script.js"></script>
+</body>
+</html>
